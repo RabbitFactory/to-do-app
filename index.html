@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rabbit's personal To Do App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="button.css" />
+  </head>
+  <body>
     <div class="container">
+      <div class="header">
+        <img width="30px" height="30px" src="img/rabbit.png" alt="" />
         <h1>Rabbit's Personal To Do App</h1>
-        <form action="" id="form">
-            <input placeholder="Enter a new task" type="text" id="input">
-            <button type="submit" id="submit">Add</button>
-        </form>
-        <ul id="list"></ul>
+        <img width="30px" height="30px" src="img/sticky-notes.png" alt="" />
+      </div>
+      <form id="form" class="form">
+        <div class="wave-group">
+          <input required="" type="text" class="input" id="input" />
+          <span class="bar"></span>
+          <label class="label">
+            <span class="label-char" style="--index: 0">N</span>
+            <span class="label-char" style="--index: 1">a</span>
+            <span class="label-char" style="--index: 2">m</span>
+            <span class="label-char" style="--index: 3">e</span>
+          </label>
+        </div>
+        <button type="submit" id="submit" class="cssbuttons-io-button">
+          <svg
+            height="24"
+            width="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <!-- <span>Add</span> -->
+        </button>
+      </form>
+      <ul id="list"></ul>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

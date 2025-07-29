@@ -1,0 +1,38 @@
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.3em 0.6em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgb(64, 99, 255) 0%,
+    rgb(152, 193, 255) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #002fff98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  will-change: transform;
+}
+
+/* .cssbuttons-io-button svg {
+  margin-right: 6px;
+} */
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+  transform: scale(0.9);
+}
+
+

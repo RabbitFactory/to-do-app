@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Delius", cursive;
   background: #f4f4f4;
   padding: 40px;
   display: flex;
@@ -10,7 +12,7 @@ body {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  width: 300px;
+  width: 400px;
 }
 
 input {
@@ -41,4 +43,20 @@ li {
 li.done {
   text-decoration: line-through;
   color: #888;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex; 
+    /* gap: 10px; */
 }
