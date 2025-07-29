@@ -7,10 +7,22 @@ const addingFunc = () => {
   if(task == "") return; 
 
   const li = document.createElement("li");
+  const deleteButton = document.createElement("button");
 
   li.textContent = task;
+  deleteButton.textContent = "X";
 
   list.appendChild(li);
+  li.appendChild(deleteButton);
+
+  li.addEventListener("click", () => {
+    li.classList.toggle('done');
+  })
+
+  deleteButton.addEventListener('click', () => {
+    list.removeChild(li);
+  })
+
   input.value = "";
 };
 
